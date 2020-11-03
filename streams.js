@@ -24,7 +24,7 @@ server.on('request', (req, res) => {
     //  res.statusCode = 500;
     //  })
     //Reading Files with pipe to Maitian the Balance between the sending and managing in reciving data so data dont overflow and create backpressure!
-    const readedData = fs.createReadStream('test-file.txt');
+    const readedData = fs.createReadStream('test-file.txt'); 
     readedData.pipe(res);
 });
 
